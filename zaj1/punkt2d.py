@@ -42,3 +42,4 @@ print(punkt1 == punkt2)  # Powinno wydrukować: True
 
 p3 = punkt1 + punkt2
 print(p3)                # Powinno wydrukować Punkt2D(8,4) 
+# test commit
