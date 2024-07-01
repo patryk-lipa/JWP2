@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mt-4">
+        <h1>Notes</h1>
+        <button class="btn btn-danger" onclick="logout()">Logout</button>
+    </div>
+
+    <form id="note-form" class="mt-4">
+        <div class="form-group">
+            <input type="text" class="form-control" id="note-title" placeholder="Title" required>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" id="note-content" rows="3" placeholder="Enter your note here" required></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="addNote()">Add Note</button>
+    </form>
+
+    <div id="notes-container" class="mt-4" onload="loadNotes()">
+        <script type="text/javascript">
+            loadNotes();
+        </script>
+    </div>
+</div>

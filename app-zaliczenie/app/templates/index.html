@@ -1,0 +1,21 @@
+<html>
+   <head>
+      <script type = "text/javascript"
+         src = "{{ url_for('static', filename = 'script.js') }}" ></script>
+   
+    <link rel="stylesheet" href=
+            "{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href=
+            "{{url_for('static', filename='bootstrap.min.css')}}">
+   </head>
+
+   <body style="background-color: #f8f9fa;">
+        {% if logged_in %}
+            {% include "notes.html" %}
+        {% else %}
+            {% include "login.html" %}
+        {% endif %}
+    </body>
+</html>
+
+
